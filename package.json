@@ -1,5 +1,5 @@
 {
-  "name": "studyhub-demo",
+  "name": "StudyHub",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "homepage": "https://mhmdbaledi.github.io/studyhub-demo",
+  "homepage": "https://mhmdbaledi.github.io/StudyHub",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
