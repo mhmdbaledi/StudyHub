@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
 import { Box } from '@mui/material'
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import Resources from './pages/Resources'
-import Login from './pages/Login'
-import Profile from './pages/Profile'
+import Navbar from '../src/components/Navbar.jsx'
+import Home from '../src/pages/Home.jsx'
+import Resources from '../src/pages/Resources.jsx'
+import Login from '../src/pages/Login.jsx'
+import Profile from '../src/pages/Profile.jsx'
 
 function App() {
   return (
