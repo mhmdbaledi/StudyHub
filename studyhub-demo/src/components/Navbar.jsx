@@ -11,6 +11,7 @@ import {
   ListItemText,
   useMediaQuery,
   useTheme,
+  Box
 } from '@mui/material'
 import { Menu as MenuIcon, School } from '@mui/icons-material'
 import { Link, useLocation } from 'react-router-dom'
@@ -42,8 +43,12 @@ const Navbar = () => {
           to={item.path}
           onClick={handleDrawerToggle}
           selected={location.pathname === item.path}
+          sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
         >
-          <ListItemText primary={item.text} />
+          <ListItemText 
+            primary={item.text} 
+            primaryTypographyProps={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+          />
         </ListItem>
       ))}
     </List>
@@ -53,8 +58,15 @@ const Navbar = () => {
     <>
       <AppBar position="static" elevation={2}>
         <Toolbar>
-          <School sx={{ mr: 2 }} />
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <School sx={{ ml: 2 }} />
+          <Typography 
+            variant="h6" 
+            component="div" 
+            sx={{ 
+              flexGrow: 1,
+              fontFamily: 'Vazir, Arial, sans-serif'
+            }}
+          >
             StudyHub
           </Typography>
           
@@ -76,6 +88,7 @@ const Navbar = () => {
                   component={Link}
                   to={item.path}
                   variant={location.pathname === item.path ? "outlined" : "text"}
+                  sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
                 >
                   {item.text}
                 </Button>
@@ -87,7 +100,7 @@ const Navbar = () => {
 
       <Drawer
         variant="temporary"
-        anchor="left"
+        anchor="right"
         open={mobileOpen}
         onClose={handleDrawerToggle}
         ModalProps={{ keepMounted: true }}

@@ -43,7 +43,7 @@ const Home = () => {
   ]
 
   return (
-    <Box>
+    <Box sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}>
       {/* Hero Section */}
       <Paper 
         sx={{ 
@@ -55,10 +55,21 @@ const Home = () => {
       >
         <Container maxWidth="lg">
           <Box textAlign="center">
-            <Typography variant="h2" component="h1" gutterBottom fontWeight="bold">
+            <Typography 
+              variant="h2" 
+              component="h1" 
+              gutterBottom 
+              fontWeight="bold"
+              sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+            >
               StudyHub
             </Typography>
-            <Typography variant="h5" component="p" gutterBottom sx={{ mb: 4 }}>
+            <Typography 
+              variant="h5" 
+              component="p" 
+              gutterBottom 
+              sx={{ mb: 4, fontFamily: 'Vazir, Arial, sans-serif' }}
+            >
               پلتفرم اشتراک‌گذاری منابع درسی دانشگاه
             </Typography>
             <Button 
@@ -67,7 +78,8 @@ const Home = () => {
               sx={{ 
                 bgcolor: 'white',
                 color: 'primary.main',
-                '&:hover': { bgcolor: 'grey.100' }
+                '&:hover': { bgcolor: 'grey.100' },
+                fontFamily: 'Vazir, Arial, sans-serif'
               }}
               onClick={() => navigate('/resources')}
             >
@@ -79,7 +91,14 @@ const Home = () => {
 
       {/* Features Section */}
       <Container maxWidth="lg">
-        <Typography variant="h4" component="h2" textAlign="center" gutterBottom mb={6}>
+        <Typography 
+          variant="h4" 
+          component="h2" 
+          textAlign="center" 
+          gutterBottom 
+          mb={6}
+          sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+        >
           ویژگی‌های پلتفرم
         </Typography>
         
@@ -91,10 +110,19 @@ const Home = () => {
                   <Box sx={{ color: 'primary.main', mb: 2 }}>
                     {feature.icon}
                   </Box>
-                  <Typography variant="h6" component="h3" gutterBottom>
+                  <Typography 
+                    variant="h6" 
+                    component="h3" 
+                    gutterBottom
+                    sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+                  >
                     {feature.title}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography 
+                    variant="body2" 
+                    color="text.secondary"
+                    sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+                  >
                     {feature.description}
                   </Typography>
                 </CardContent>
@@ -107,26 +135,56 @@ const Home = () => {
         <Box sx={{ mt: 8, textAlign: 'center' }}>
           <Grid container spacing={6}>
             <Grid item xs={12} sm={4}>
-              <Typography variant="h3" component="div" color="primary" fontWeight="bold">
+              <Typography 
+                variant="h3" 
+                component="div" 
+                color="primary" 
+                fontWeight="bold"
+                sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+              >
                 ۱,۲۵۰+
               </Typography>
-              <Typography variant="h6" color="text.secondary">
+              <Typography 
+                variant="h6" 
+                color="text.secondary"
+                sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+              >
                 منبع درسی
               </Typography>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Typography variant="h3" component="div" color="primary" fontWeight="bold">
+              <Typography 
+                variant="h3" 
+                component="div" 
+                color="primary" 
+                fontWeight="bold"
+                sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+              >
                 ۵۰۰+
               </Typography>
-              <Typography variant="h6" color="text.secondary">
+              <Typography 
+                variant="h6" 
+                color="text.secondary"
+                sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+              >
                 کاربر فعال
               </Typography>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Typography variant="h3" component="div" color="primary" fontWeight="bold">
+              <Typography 
+                variant="h3" 
+                component="div" 
+                color="primary" 
+                fontWeight="bold"
+                sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+              >
                 ۱۵+
               </Typography>
-              <Typography variant="h6" color="text.secondary">
+              <Typography 
+                variant="h6" 
+                color="text.secondary"
+                sx={{ fontFamily: 'Vazir, Arial, sans-serif' }}
+              >
                 رشته دانشگاهی
               </Typography>
             </Grid>

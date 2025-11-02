@@ -8,7 +8,11 @@ import Profile from '../src/pages/Profile.jsx'
 
 function App() {
   return (
-    <Box sx={{ minHeight: '100vh', backgroundColor: '#f5f5f5' }}>
+     <Box sx={{ 
+      minHeight: '100vh', 
+      backgroundColor: '#f5f5f5',
+      fontFamily: 'Vazir, Arial, sans-serif'
+    }}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
